@@ -1,6 +1,6 @@
  #header__navbar {
      padding: 0;
-     height: 55px;
+     height: 70px;
      transition: var(--transition);
      position: fixed;
 
@@ -8,6 +8,7 @@
      &.active {
          background-color: #fff;
          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.07);
+         height: 60px;
 
          a {
              color: var(--secondary-color);
@@ -50,7 +51,7 @@
      .offcanvas-header {
          padding-top: 0;
          padding-bottom: 0;
-         height: 55px;
+         height: 70px;
      }
 
      a {
@@ -87,11 +88,13 @@
      }
 
      .link__btn {
-         width: 120px;
+         width: 178px;
+         //  flex: 15%;
 
          a {
+             width: 120px;
+
              background: var(--gradient-theme);
-             width: 100%;
              font-family: Poppins;
              font-size: 16px;
              font-weight: 600;
@@ -113,7 +116,7 @@
 
          h2 {
              text-transform: uppercase;
-             font-size: 40px;
+             font-size: 2.5rem;
              font-weight: 700;
              letter-spacing: 1.2px;
 
@@ -136,6 +139,18 @@
                      background-color: var(--white-color);
                      transition: var(--transition);
                  }
+
+                 @media (max-width:767px) {
+                     font-size: 1.4rem;
+
+
+                 }
+             }
+
+             @media (max-width:767px) {
+                 font-size: 1.5rem;
+
+
              }
 
          }
