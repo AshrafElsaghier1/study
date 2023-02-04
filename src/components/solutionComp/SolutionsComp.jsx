@@ -1,0 +1,34 @@
+import { Col, Container, Row } from "react-bootstrap";
+import CustomComponent from "../../customComponents/CustomComponent";
+import { solutionsData } from "../../dummyData/dummyData";
+import SingleSolution from "./SingleSolution";
+const data = {
+  text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam  nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam  erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum.",
+  text1:
+    "Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet",
+  link: "Learn About Our Success",
+};
+const SolutionsComp = () => {
+  return (
+    <Container className="pt-5 mt-3">
+      <Row>
+        <Col md={6} className="mb-3">
+          <CustomComponent {...data}>
+            The best business <br /> solution for you
+          </CustomComponent>
+        </Col>
+        <Col md={6} style={{ paddingTop: "18px" }}>
+          <Row>
+            {solutionsData.map((solution) => (
+              <Col md={6} className="mb-2 mb-lg-4" key={solution.id}>
+                <SingleSolution {...solution} />
+              </Col>
+            ))}
+          </Row>
+        </Col>
+      </Row>
+    </Container>
+  );
+};
+
+export default SolutionsComp;

@@ -1,8 +1,13 @@
 #banner {
-    padding: 40px;
+    padding-top: 40px;
     background: url("/assets/imgs/banner.png");
     background-size: cover;
-    height: 625px;
+    height: 675px;
+
+    @media (min-width:992px) and (max-width:1100px) {
+        height: 510px;
+
+    }
 
     .banner__inner {
         padding-top: 55px;
@@ -71,6 +76,8 @@
 
     }
 
+
+
     @media (max-width:991px) {
         height: auto;
 
@@ -122,7 +129,7 @@
 
     @media (max-width: 767px) {
         .banner__inner {
-            margin-top: 1.5rem;
+            margin-top: 1.4rem;
 
             .banner__inner-info {
 
@@ -131,7 +138,7 @@
                 }
 
                 h1 {
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
                     max-width: 60%;
                 }
 

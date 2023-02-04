@@ -1,0 +1,79 @@
+.custom__inner {
+    h2 {
+        position: relative;
+        font-size: 1.9rem;
+        font-weight: 700;
+        color: var(--secondary-color);
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -8px;
+            background-color: var(--main-color);
+            height: 3px;
+            width: 79px;
+            left: 0;
+        }
+
+    }
+
+    p {
+        font-size: .875rem;
+        line-height: 1.6;
+        color: var(--text-color)
+    }
+
+    .custom__btn-container {
+        width: 260px;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            font-size: .9rem;
+            color: var(--main-color);
+
+            svg {
+                font-size: 1.3rem;
+            }
+
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .custom__btn-container {
+            width: 230px;
+
+            a {
+                font-size: .8rem;
+
+                svg {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        .custom__btn-container {
+            width: 200px;
+
+            a {
+                font-size: .75rem;
+
+                svg {
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+}
