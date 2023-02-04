@@ -1,0 +1,54 @@
+#platform {
+    padding: 40px 0;
+
+    .platform__inner-top {
+        margin-bottom: 20px;
+
+        p {
+
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        span {
+            font-size: .8rem;
+            text-align: center;
+            color: var(--secondary-color);
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .platform__inner-top {
+            p {
+                font-size: .85rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            span {
+                font-size: .8rem;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        .platform__inner-top {
+            p {
+                font-size: .8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

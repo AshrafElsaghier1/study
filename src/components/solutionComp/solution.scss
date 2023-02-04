@@ -11,6 +11,7 @@
          font-weight: 500;
          color: var(--secondary-color);
          padding-bottom: 10px;
+         width: max-content;
 
          &::after {
              position: absolute;
@@ -28,7 +29,13 @@
          color: var(--text-color);
      }
 
-     @media (min-width: 768px) and (max-width: 991px) {}
+     @media (max-width: 991px) {
+         text-align: center;
 
-     @media (max-width: 767px) {}
+         .icon__container,
+         .solution__title {
+             margin: auto;
+         }
+     }
+
  }
