@@ -10,12 +10,12 @@ const CustomComponent = ({ children, text, text1, link, button }) => {
       <span className="mb-3">{text1}</span>
 
       {button ? (
-        <Link to="/" className="link__btn d__flex-center ">
+        <Link to="/study" className="link__btn d__flex-center ">
           About us
         </Link>
       ) : (
         <div className="custom__btn-container mt-2">
-          <Link to="/">
+          <Link to="/study">
             {link}
             <HiOutlineArrowNarrowRight />
           </Link>

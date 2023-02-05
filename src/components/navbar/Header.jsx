@@ -31,7 +31,7 @@ const Header = () => {
     >
       <Container className="h-100">
         <div className="logo">
-          <NavLink to="/" className="logo__link">
+          <NavLink to="/study" className="logo__link">
             <h2 className="mb-0">
               St <span>u</span> dy
             </h2>
@@ -39,8 +39,12 @@ const Header = () => {
         </div>
         <Navbar.Toggle
           aria-controls={`offcanvasNavbar-expand-lg`}
-          className="menubar border-0"
-        ></Navbar.Toggle>
+          className="menubar border-0 d-flex d-lg-none justify-content-around align-items-center flex-column"
+        >
+          <span> </span>
+          <span></span>
+          <span></span>
+        </Navbar.Toggle>
         <Navbar.Offcanvas
           id="offcanvasNavbar-expand-lg"
           aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
@@ -53,7 +57,7 @@ const Header = () => {
               className="offcanvas__title"
             >
               <div className="logo">
-                <NavLink to="/" className="logo__link">
+                <NavLink to="/study" className="logo__link">
                   <h2 className="mb-0">
                     St <span>u</span> dy
                   </h2>
@@ -66,15 +70,18 @@ const Header = () => {
               {linksList.map(({ link, id }) => (
                 <NavLink
                   key={id}
-                  to="/"
+                  to="/study"
                   className="d-flex align-items-start align-items-lg-center "
                 >
                   {link}
                 </NavLink>
               ))}
             </Nav>
-            <Nav className="link__btn-container">
-              <Link to="/" className="d__flex-center link__btn-btn">
+            <Nav className="link__btn-container ">
+              <Link
+                to="/study"
+                className="d__flex-center link__btn-btn mt-3 mt-lg-0"
+              >
                 About us
               </Link>
             </Nav>

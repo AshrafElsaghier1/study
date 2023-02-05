@@ -46,7 +46,7 @@ const Footer = () => {
                     <ul>
                       {footerLinks.map(({ link }, index) => (
                         <li key={index}>
-                          <Link to="/"> {link} </Link>
+                          <Link to="/study"> {link} </Link>
                         </li>
                       ))}
                     </ul>

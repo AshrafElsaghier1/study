@@ -4,6 +4,41 @@
      transition: var(--transition);
      position: fixed;
 
+     .menubar {
+         box-shadow: none !important;
+         padding: 0;
+
+         height: 30px;
+         width: 40px;
+
+         span {
+             background-color: var(--secondary-color);
+             display: flex;
+             height: 2px;
+             align-self: flex-end;
+             transition: var(--transition);
+
+             &:nth-child(1) {
+                 width: 90%;
+             }
+
+             &:nth-child(2) {
+                 width: 60%;
+             }
+
+             &:nth-child(3) {
+                 width: 75%;
+
+             }
+
+         }
+
+         &:hover {
+             span {
+                 width: 100%;
+             }
+         }
+     }
 
      &.active {
          background-color: #fff;
@@ -47,11 +82,14 @@
                  }
              }
          }
-     }
 
-     .menubar {
-         box-shadow: none !important;
-         padding: 0;
+         .menubar {
+             span {
+                 background-color: none;
+                 background: var(--gradient-theme);
+             }
+
+         }
      }
 
  }

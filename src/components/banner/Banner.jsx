@@ -17,7 +17,7 @@ const Banner = () => {
                 diam nonumy eirmod
               </span>
               <div className="link__btn mt-3 ">
-                <Link to="/" className="w-100 d__flex-center">
+                <Link to="/study" className="w-100 d__flex-center">
                   About us
                 </Link>
               </div>
