@@ -18,7 +18,7 @@ const LayoutComponent = () => {
       <SolutionsComp />
       <Report />
       <PlatformOverviewComp />
-      {/* <TechnoComp /> */}
+      <TechnoComp />
       <BusinessComp />
       <Features />
       <Testimonial />

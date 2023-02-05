@@ -1,7 +1,7 @@
 #reports.report {
     position: relative;
 
-    .report__inner-imgs {
+    .sec__inner-imgs {
         img {
             width: 100%;
             margin: auto;
@@ -15,7 +15,6 @@
                 position: relative;
                 width: 50vw;
                 left: -11vw;
-
                 height: 450px;
 
                 &::before {
@@ -43,10 +42,34 @@
                 img {
                     position: absolute;
                     top: 50%;
-                    left: -.5vw;
-                    transform: translate(-.5vw, -50%);
+                    left: -4vw;
+                    transform: translate(-4vw, -50%);
                 }
             }
         }
+
+        @media (min-width: 992px) and (max-width:1330px) {
+
+            .bg__img-container {
+                img {
+
+                    left: -1.5vw;
+                    transform: translate(-1.5vw, -50%);
+                }
+            }
+        }
+
+        @media (min-width:1400px) {
+
+            .bg__img-container {
+                img {
+
+                    left: -2vw;
+                    transform: translate(-2vw, -50%);
+                }
+            }
+        }
+
+
     }
 }

@@ -21,7 +21,12 @@
         color: var(--text-color);
 
         display: block;
+        width: calc(100% - 20px);
 
+        @media (max-width:991px) {
+            width: 100%;
+
+        }
     }
 
 

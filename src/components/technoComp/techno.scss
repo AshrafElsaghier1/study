@@ -1,0 +1,28 @@
+ #techno {
+     overflow: hidden;
+
+
+
+     .bg__img-container {
+
+         @media (min-width:992px) {
+
+             position: relative;
+
+             .bg__img {
+                 transform-origin: center;
+                 transform: rotate(249deg);
+                 position: relative;
+                 right: -30vw;
+             }
+
+             .techno__img {
+                 position: absolute;
+                 top: 50%;
+
+                 transform: translate(-85%, -50%);
+
+             }
+         }
+     }
+ }

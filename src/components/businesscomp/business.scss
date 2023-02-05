@@ -1,14 +1,4 @@
 #business {
-    .business__inner-left {
-        span {
-            width: calc(100% - 20px);
-
-            @media (max-width:991px) {
-                width: 100%;
-
-            }
-        }
-    }
 
     .business__inner-right {
         padding-left: 20px;
