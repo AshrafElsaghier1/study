@@ -8,10 +8,7 @@ import { linksList } from "../../dummyData/dummyData";
 import "./header.scss";
 const Header = () => {
   const [active, setActive] = useState(false);
-  const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 40) {
@@ -36,14 +33,13 @@ const Header = () => {
         <div className="logo">
           <NavLink to="/" className="logo__link">
             <h2 className="mb-0">
-              St <span>v</span> dy
+              St <span>u</span> dy
             </h2>
           </NavLink>
         </div>
         <Navbar.Toggle
           aria-controls={`offcanvasNavbar-expand-lg`}
           className="menubar border-0"
-          onClick={handleShow}
         ></Navbar.Toggle>
         <Navbar.Offcanvas
           id="offcanvasNavbar-expand-lg"
@@ -59,7 +55,7 @@ const Header = () => {
               <div className="logo">
                 <NavLink to="/" className="logo__link">
                   <h2 className="mb-0">
-                    St <span>v</span> dy
+                    St <span>u</span> dy
                   </h2>
                 </NavLink>
               </div>

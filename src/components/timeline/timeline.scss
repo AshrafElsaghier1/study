@@ -6,6 +6,7 @@ li.timeline__item {
         font-size: 1rem;
         color: var(--secondary-color);
 
+
         &::before {
             content: attr(data-count);
             position: absolute;
@@ -23,7 +24,7 @@ li.timeline__item {
             font-size: .9rem;
 
             @media (max-width:767px) {
-                left: -20px;
+                left: -18px;
 
             }
         }
@@ -44,7 +45,7 @@ li.timeline__item {
             background-color: #bcbcbc;
 
             @media (max-width:767px) {
-                left: -5px;
+                left: -3px;
 
             }
 

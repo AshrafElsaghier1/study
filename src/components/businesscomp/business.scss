@@ -1,24 +1,16 @@
 #business {
-    .business__inner-left {
-        h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--secondary-color);
-        }
 
-        p {
-            font-size: .9rem;
-            color: var(--text-color);
-            width: calc(100% - 20px);
+    .business__inner-right {
+        padding-left: 20px;
+
+        @media (min-width:768px) and (max-width:991px) {
+            padding-left: 40px;
 
         }
 
-        .link__btn {
-            width: 178px;
-            height: 45px;
-            border-radius: 10px;
-            background: var(--gradient-theme);
-            color: var(--white-color)
+        @media (max-width:767px) {
+            padding-left: 30px;
+
         }
     }
 }

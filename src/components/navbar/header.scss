@@ -15,15 +15,9 @@
              -webkit-background-clip: text;
              -webkit-text-fill-color: transparent;
 
-
              .logo__link {
-                 font-size: 72px;
-
-
 
                  h2 {
-
-
                      span {
                          background: var(--gradient-theme);
                          -webkit-background-clip: text;
@@ -42,33 +36,16 @@
          }
 
          #offcanvasNavbar-expand-lg {
-
-
              a {
 
                  color: var(--secondary-color)
              }
 
              .link__btn {
-                 width: 178px;
-                 //  flex: 15%;
-
                  a {
-                     width: 120px;
-
-                     background: var(--gradient-theme);
-                     font-family: Poppins;
-                     font-size: 16px;
-                     font-weight: 600;
-                     border-radius: 10px;
-                     padding: 5px 0;
                      color: #fff;
                  }
-
-
              }
-
-
          }
      }
 
@@ -78,7 +55,6 @@
      }
 
  }
-
 
  #offcanvasNavbar-expand-lg {
      .offcanvas-header {
@@ -122,15 +98,13 @@
 
      .link__btn {
          width: 178px;
-         //  flex: 15%;
+         justify-content: flex-end;
 
          a {
              width: 120px;
-
              background: var(--gradient-theme);
-             font-family: Poppins;
-             font-size: 16px;
-             font-weight: 600;
+             font-size: 14px;
+             font-weight: 500;
              border-radius: 10px;
              padding: 5px 0;
              color: #fff;

@@ -1,31 +1,29 @@
 import "./timeline.scss";
+
+const timelineData = [
+  {
+    title: "Market Research",
+    text: " Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,sed diam voluptua.",
+  },
+  {
+    title: "Market Research",
+    text: " Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,sed diam voluptua.",
+  },
+  {
+    title: "Market Research",
+    text: " Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,sed diam voluptua.",
+  },
+];
+
 const Timeline = () => {
   return (
     <>
-      <li className="timeline__item">
-        <p data-count="1">Market Research</p>
-        <span>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
-        </span>
-      </li>
-      <li className="timeline__item">
-        <p data-count="2">Market Research</p>
-        <span>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
-        </span>
-      </li>
-      <li className="timeline__item">
-        <p data-count="3">Market Research</p>
-        <span>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
-        </span>
-      </li>
+      {timelineData.map(({ title, text }, index) => (
+        <li className="timeline__item" key={index}>
+          <p data-count="3">{title}</p>
+          <span>{text}</span>
+        </li>
+      ))}
     </>
   );
 };

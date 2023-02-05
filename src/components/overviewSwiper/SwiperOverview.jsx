@@ -6,24 +6,24 @@ import "./swiperOverview.scss";
 
 const SwiperOverview = () => {
   return (
-    <div className="swiper__container">
+    <div className="swiper__container position-relative">
       <Swiper
         pagination={{
           clickable: true,
         }}
         spaceBetween={0}
         modules={[Pagination]}
-        className="mySwiper"
+        className="mySwiper position-static"
         loop={true}
       >
         <SwiperSlide>
-          <img src="/assets/imgs/report-1.png" alt="report" className="w-100" />
+          <img src="/assets/imgs/report.png" alt="report" className="w-100" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/imgs/report-1.png" alt="report" className="w-100" />
+          <img src="/assets/imgs/report.png" alt="report" className="w-100" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/imgs/report-1.png" alt="report" className="w-100" />
+          <img src="/assets/imgs/report.png" alt="report" className="w-100" />
         </SwiperSlide>
       </Swiper>
     </div>

@@ -1,34 +1,32 @@
 import { Col, Container, Row } from "react-bootstrap";
 import CustomComponent from "../../customComponents/CustomComponent";
-import Timeline from "../timeline/Timeline";
-import "./business.scss";
+import TestimonialSwiper from "./TestimonialSwiper";
 
+import "./testimonial.scss";
 const data = {
   text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed  diam nonumy eirmod tempor invidunt ut labore et dolore magna  aliquyam erat, sed diam voluptua. At vero eos et accusam et  justo duo dolores et ea rebum.",
   text1:
     " Stet clita kasd gubergren, no sea  takimata sanctus est Lorem ipsum dolor sit amet",
 };
 
-const BusinessComp = () => {
+const Testimonial = () => {
   return (
-    <div id="business" className="py-3">
+    <section id="testimonial" className="py-4">
       <Container>
         <Row>
-          <Col lg={6} className="mb-5 mb-lg-0">
-            <CustomComponent button={true} {...data}>
-              Acceleration Process to <br />
-              Grow Your Business
-            </CustomComponent>
-          </Col>
           <Col lg={6}>
-            <ul className="business__inner-right">
-              <Timeline />
-            </ul>
+            <TestimonialSwiper />
+          </Col>
+          <Col lg={6} className="mt-4 mt-lg-0">
+            <CustomComponent {...data} button={true}>
+              Grow Your Business and
+              <br /> Join Our Happy Users
+            </CustomComponent>
           </Col>
         </Row>
       </Container>
-    </div>
+    </section>
   );
 };
 
-export default BusinessComp;
+export default Testimonial;

@@ -1,0 +1,42 @@
+#testimonial {
+    .testimonial__container {
+        padding: 20px 15px;
+        background: #fff;
+        box-shadow: 0px 0px 20px #00000029;
+        position: relative;
+        border-radius: 5px;
+        margin-bottom: 30px;
+
+        .mySwiper {
+            position: static;
+
+            .swiper__item {
+                img {
+                    object-fit: cover;
+                    width: 157px;
+                }
+
+                .testimonial__inner-info {
+                    p {
+
+                        color: var(--secondary-color);
+                        font-weight: 500;
+
+                    }
+
+                    span {
+                        color: var(--text-color);
+
+                        &.icons__container {
+                            color: #CB48F9;
+                        }
+                    }
+                }
+            }
+        }
+
+        .swiper-pagination {
+            bottom: -35px;
+        }
+    }
+}

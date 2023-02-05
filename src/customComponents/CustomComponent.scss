@@ -1,36 +1,39 @@
 .custom__inner {
     h2 {
         position: relative;
-        font-size: 1.9rem;
-        font-weight: 700;
+
         color: var(--secondary-color);
 
-        &::after {
-            content: "";
-            position: absolute;
-            top: -8px;
-            background-color: var(--main-color);
-            height: 3px;
-            width: 79px;
-            left: 0;
+        &.heading {
+            &::after {
+                content: "";
+                position: absolute;
+                top: -8px;
+                background-color: var(--main-color);
+                height: 3px;
+                width: 79px;
+                left: 0;
+            }
         }
+    }
+
+    span {
+        color: var(--text-color);
+        width: calc(100% - 20px);
+        display: block;
 
     }
 
-    p {
-        font-size: .875rem;
-        line-height: 1.6;
-        color: var(--text-color)
-    }
+
 
     .custom__btn-container {
         width: 260px;
+
 
         a {
             display: flex;
             align-items: center;
             justify-content: space-between;
-
             font-size: .9rem;
             color: var(--main-color);
 
@@ -39,6 +42,17 @@
             }
 
         }
+
+
+    }
+
+    .link__btn {
+        width: 178px;
+        height: 45px;
+        border-radius: 10px;
+        background: var(--gradient-theme);
+        color: var(--white-color);
+
     }
 
     @media (max-width: 991px) {
@@ -51,15 +65,13 @@
             margin-right: auto;
         }
 
-        .custom__btn-container {
+        .custom__btn-container,
+        .link__btn {
             margin: auto;
         }
     }
 
     @media (min-width: 768px) and (max-width: 991px) {
-        h2 {
-            font-size: 1.5rem;
-        }
 
         .custom__btn-container {
             width: 230px;
@@ -75,10 +87,6 @@
     }
 
     @media (max-width: 767px) {
-        h2 {
-            font-size: 1.2rem;
-        }
-
         .custom__btn-container {
             width: 200px;
 
