@@ -25,7 +25,7 @@ const Banner = () => {
           </Col>
           <Col xs={12} lg={6} className="banner__inner-img p-0">
             <img
-              src="/assets/imgs/report.png"
+              src="./assets/imgs/report.png"
               alt="report-img"
               className="w-100"
               draggable="false"

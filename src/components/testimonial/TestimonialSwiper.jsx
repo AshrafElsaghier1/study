@@ -7,7 +7,7 @@ import { AiFillStar } from "react-icons/ai";
 const testimonialData = [
   {
     id: 1,
-    imgSrc: "/assets/imgs/testimonial.png",
+    imgSrc: "./assets/imgs/testimonial.png",
     name: "Florie Jacobs",
     jobTitle: "CEO of Company",
     desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
@@ -15,7 +15,7 @@ const testimonialData = [
   },
   {
     id: 2,
-    imgSrc: "/assets/imgs/testimonial.png",
+    imgSrc: "./assets/imgs/testimonial.png",
     name: " Jacobs",
     jobTitle: "CEO of Company",
     desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
@@ -23,7 +23,7 @@ const testimonialData = [
   },
   {
     id: 3,
-    imgSrc: "/assets/imgs/testimonial.png",
+    imgSrc: "./assets/imgs/testimonial.png",
     name: "Florie",
     jobTitle: "CEO of Company",
     desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",

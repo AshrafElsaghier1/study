@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Navigate,
+  Route,
+  Routes,
+} from "react-router-dom";
 import LayoutComponent from "./components/layout/LayoutComponent";
 import Header from "./components/navbar/Header";
 import "./App.scss";
@@ -8,7 +13,8 @@ const App = () => {
       <div>
         <Header />
         <Routes>
-          <Route path="/stvdy" element={<LayoutComponent />} />
+          <Route path="/" element={<Navigate to="study" />} />
+          <Route path="/study" element={<LayoutComponent />} />
         </Routes>
       </div>
     </Router>

@@ -17,13 +17,13 @@ const SwiperOverview = () => {
         loop={true}
       >
         <SwiperSlide>
-          <img src="/assets/imgs/report.png" alt="report" className="w-100" />
+          <img src="./assets/imgs/report.png" alt="report" className="w-100" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/imgs/report.png" alt="report" className="w-100" />
+          <img src="./assets/imgs/report.png" alt="report" className="w-100" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/imgs/report.png" alt="report" className="w-100" />
+          <img src="./assets/imgs/report.png" alt="report" className="w-100" />
         </SwiperSlide>
       </Swiper>
     </div>
