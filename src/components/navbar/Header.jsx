@@ -73,7 +73,7 @@ const Header = () => {
                 </NavLink>
               ))}
             </Nav>
-            <Nav className="link__btn  ">
+            <Nav className="link__btn-container">
               <Link to="/" className="d__flex-center link__btn-btn">
                 About us
               </Link>

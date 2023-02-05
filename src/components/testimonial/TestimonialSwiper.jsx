@@ -43,31 +43,29 @@ const TestimonialSwiper = () => {
         className="mySwiper "
         loop={true}
       >
-        <div style={{ border: "1px solid red", overflow: "hidden" }}>
-          {testimonialData.map(
-            ({ id, imgSrc, jobTitle, iconCount, desc, name }) => (
-              <SwiperSlide className="swiper__item" key={id}>
-                <Row className="align-items-sm-center">
-                  <Col xs={4}>
-                    <img src={imgSrc} alt="user-img" className="w-100" />
-                  </Col>
-                  <Col xs={8}>
-                    <div className="testimonial__inner-info">
-                      <p className="mb-0 "> {name} </p>
-                      <span className="d-block mb-2"> {jobTitle} </span>
-                      <span className="d-block">{desc}</span>
-                      <span className="icons__container">
-                        {[...Array(iconCount)].map((_, i) => (
-                          <AiFillStar key={i} />
-                        ))}
-                      </span>
-                    </div>
-                  </Col>
-                </Row>
-              </SwiperSlide>
-            )
-          )}
-        </div>
+        {testimonialData.map(
+          ({ id, imgSrc, jobTitle, iconCount, desc, name }) => (
+            <SwiperSlide className="swiper__item" key={id}>
+              <Row className="align-items-sm-center p-3">
+                <Col xs={4}>
+                  <img src={imgSrc} alt="user-img" className="w-100" />
+                </Col>
+                <Col xs={8}>
+                  <div className="testimonial__inner-info">
+                    <p className="mb-0 "> {name} </p>
+                    <span className="d-block mb-2"> {jobTitle} </span>
+                    <span className="d-block">{desc}</span>
+                    <span className="icons__container">
+                      {[...Array(iconCount)].map((_, i) => (
+                        <AiFillStar key={i} />
+                      ))}
+                    </span>
+                  </div>
+                </Col>
+              </Row>
+            </SwiperSlide>
+          )
+        )}
       </Swiper>
     </div>
   );

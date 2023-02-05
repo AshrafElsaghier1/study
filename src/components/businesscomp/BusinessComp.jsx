@@ -11,14 +11,16 @@ const data = {
 
 const BusinessComp = () => {
   return (
-    <div id="business" className="py-3">
+    <div id="business" className="pt-3">
       <Container>
         <Row>
           <Col lg={6} className="mb-5 mb-lg-0">
-            <CustomComponent button={true} {...data}>
-              Acceleration Process to <br />
-              Grow Your Business
-            </CustomComponent>
+            <div className="business__inner-left">
+              <CustomComponent button={true} {...data}>
+                Acceleration Process to <br />
+                Grow Your Business
+              </CustomComponent>
+            </div>
           </Col>
           <Col lg={6}>
             <ul className="business__inner-right">

@@ -8,16 +8,13 @@ const Report = () => {
       <Container>
         <Row className="align-items-center">
           <Col lg={6} className="report__inner-imgs">
-            <div className="bg__img-container">
-              {/* <img src="/assets/imgs/rectangle.png" alt="" className="w-100" /> */}
+            <div className="bg__img-container mb-4 mb-lg-0">
+              <img src="/assets/imgs/NoPath.png" alt="" />
             </div>
-            {/* <div className="report__img-container">
-              <img src="/assets/imgs/report.png" alt="" className="w-100" />
-            </div> */}
           </Col>
           <Col lg={6}>
             <CustomComponent {...data}>
-              Best Platform for the Technological Era
+              Best Platform for the <br /> Technological Era
             </CustomComponent>
           </Col>
         </Row>

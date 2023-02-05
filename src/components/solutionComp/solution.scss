@@ -7,8 +7,8 @@
      }
 
      .solution__title {
-         font-size: .850rem;
-         font-weight: 500;
+
+         font-weight: 600;
          color: var(--secondary-color);
          padding-bottom: 10px;
          width: max-content;
@@ -24,10 +24,8 @@
          }
      }
 
-     p {
-         font-size: 12px;
+     span {
          color: var(--text-color);
-
      }
 
      @media (max-width: 991px) {
@@ -36,6 +34,16 @@
          .icon__container,
          .solution__title {
              margin: auto;
+         }
+
+         .icon__container {
+             width: 50px;
+             height: 50px;
+
+             img {
+                 width: 23px;
+             }
+
          }
      }
 

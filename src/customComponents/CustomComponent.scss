@@ -8,7 +8,7 @@
             &::after {
                 content: "";
                 position: absolute;
-                top: -8px;
+                top: -12px;
                 background-color: var(--main-color);
                 height: 3px;
                 width: 79px;
@@ -19,7 +19,7 @@
 
     span {
         color: var(--text-color);
-        width: calc(100% - 20px);
+
         display: block;
 
     }
@@ -47,16 +47,16 @@
     }
 
     .link__btn {
-        width: 178px;
-        height: 45px;
-        border-radius: 10px;
-        background: var(--gradient-theme);
         color: var(--white-color);
-
+        width: 120px;
+        background: var(--gradient-theme);
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 10px;
+        padding: 5px 0;
     }
 
     @media (max-width: 991px) {
-
         text-align: center;
 
         h2 {
@@ -65,10 +65,15 @@
             margin-right: auto;
         }
 
+        span {
+            width: 100%;
+        }
+
         .custom__btn-container,
         .link__btn {
             margin: auto;
         }
+
     }
 
     @media (min-width: 768px) and (max-width: 991px) {

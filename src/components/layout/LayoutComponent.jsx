@@ -1,5 +1,4 @@
 import React from "react";
-import CustomComponent from "../../customComponents/CustomComponent";
 import Banner from "../banner/Banner";
 import BusinessComp from "../businesscomp/BusinessComp";
 import Clients from "../clients/Clients";
@@ -17,7 +16,7 @@ const LayoutComponent = () => {
       <Banner />
       <Clients />
       <SolutionsComp />
-      {/* <Report /> */}
+      <Report />
       <PlatformOverviewComp />
       {/* <TechnoComp /> */}
       <BusinessComp />

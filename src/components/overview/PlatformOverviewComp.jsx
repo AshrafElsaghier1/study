@@ -6,7 +6,7 @@ const PlatformOverviewComp = () => {
   return (
     <section id="platform">
       <Container>
-        <div className="platform__inner-top text-center">
+        <div className="platform__inner-top ">
           <Row>
             <Col md={8} lg={6} className="mx-auto">
               <p>Advanced Customer Service Platform</p>

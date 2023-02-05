@@ -10,8 +10,7 @@ const Banner = () => {
             <div className="banner__inner-info d-flex justify-content-center flex-column">
               <p>Advanced Platform</p>
               <h1 className="mb-3">
-                Take your team <br className="d-none d-md-block " /> to the next
-                level
+                Take your team <br /> to the next level
               </h1>
               <span>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed

@@ -8,8 +8,10 @@ const SingleSolution = ({ bgColor, iconImg, title, text }) => {
       >
         <img src={iconImg} draggable="false" />
       </div>
-      <h2 className="solution__title position-relative mb-3"> {title} </h2>
-      <p>{text}</p>
+      <span className="solution__title position-relative mb-3 d-block">
+        {title}
+      </span>
+      <span>{text}</span>
     </div>
   );
 };

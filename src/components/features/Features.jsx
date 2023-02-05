@@ -15,12 +15,12 @@ export const Features = () => {
     <section id="features" className="py-4">
       <Container>
         <h2 className="mx-auto text-center">
-          Don't Just Take <br className="d-none d-md-block" /> our Word for it!
+          Don't Just Take <br /> our Word for it!
         </h2>
         <div className="features__inner-count mt-2 mt-lg-5 pt-3">
           <Row>
             {featuresData.map(({ timer, id, title }) => (
-              <Col sm={6} lg={3} key={id}>
+              <Col sm={4} lg={3} key={id}>
                 <div className="feature__inner">
                   <h2 className="mb-1">
                     <CountUp end={timer} />

@@ -12,10 +12,10 @@
     }
 
     p {
-
+        font-size: .9rem;
 
         &.title {
-            font-weight: 700;
+            font-weight: 500;
         }
 
         @media (max-width: 991px) {
@@ -62,7 +62,7 @@
             border-radius: 25px;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
-            border: solid 1px #fff;
+            border: solid 1px #fff !important;
             font-size: .9rem;
             background-color: var(--main-color);
             transition: var(--transition);

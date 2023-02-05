@@ -96,23 +96,21 @@
          }
      }
 
-     .link__btn {
+     .link__btn-container {
          width: 178px;
          justify-content: flex-end;
 
-         a {
+         .link__btn-btn {
              width: 120px;
              background: var(--gradient-theme);
              font-size: 14px;
              font-weight: 500;
              border-radius: 10px;
              padding: 5px 0;
-             color: #fff;
+             color: #fff !important
          }
 
-
      }
-
 
  }
 

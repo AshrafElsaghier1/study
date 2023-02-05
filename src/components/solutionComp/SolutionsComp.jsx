@@ -17,10 +17,10 @@ const SolutionsComp = () => {
             The best business <br /> solution for you
           </CustomComponent>
         </Col>
-        <Col lg={6} style={{ paddingTop: "18px" }}>
+        <Col lg={6} style={{ paddingTop: "6px" }}>
           <Row>
             {solutionsData.map((solution) => (
-              <Col md={6} className="mb-2 mb-lg-4" key={solution.id}>
+              <Col md={6} className="mb-3 mb-lg-4" key={solution.id}>
                 <SingleSolution {...solution} />
               </Col>
             ))}
