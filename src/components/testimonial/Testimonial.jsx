@@ -11,7 +11,7 @@ const data = {
 
 const Testimonial = () => {
   return (
-    <section id="testimonial" className="py-4">
+    <section id="testimonial" className=" py-0 py-md-4">
       <Container>
         <Row>
           <Col lg={6}>

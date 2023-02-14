@@ -9,7 +9,7 @@
         }
 
 
-        @media (min-width: 992px) and (max-width:1550px) {
+        @media (min-width: 992px) {
 
             .bg__img-container {
                 position: relative;
@@ -17,58 +17,36 @@
                 left: -11vw;
                 height: 450px;
 
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 200px;
-                    background: linear-gradient(151deg, #FF6057 0%, #808080 100%);
-                    height: 100%;
-                    top: -150px;
-                    transform: matrix(0.87, -0.5, 0.5, 0.87, 0, 0);
-                    border-radius: 0 170px 0 0;
+                .bg__img {
+                    transform-origin: center;
+                    position: relative;
+                    transform: matrix(1, -0.2, 0.2, 1, 0, 0);
+                    margin-top: -14%;
+                    margin-left: -23vw;
                 }
 
-                &::after {
-                    content: "";
-                    position: absolute;
-                    width: 200px;
-                    background: linear-gradient(151deg, #FF6057 0%, #808080 100%);
-                    height: 100%;
-                    bottom: -150px;
-                    z-index: -1;
-                    transform: rotate(45deg);
-                }
-
-                img {
+                .report__img {
                     position: absolute;
                     top: 50%;
                     left: -4vw;
                     transform: translate(-4vw, -50%);
+
+
                 }
             }
         }
 
-        @media (min-width: 992px) and (max-width:1330px) {
+        @media (min-width:1450px) {
 
             .bg__img-container {
-                img {
+                position: relative;
+                width: 100%;
+                left: 0;
+                height: 450px;
 
-                    left: -1.5vw;
-                    transform: translate(-1.5vw, -50%);
-                }
             }
         }
 
-        @media (min-width:1400px) {
-
-            .bg__img-container {
-                img {
-
-                    left: -2vw;
-                    transform: translate(-2vw, -50%);
-                }
-            }
-        }
 
 
     }

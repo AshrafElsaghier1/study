@@ -10,7 +10,7 @@ export const data = {
 };
 const SolutionsComp = () => {
   return (
-    <Container className="pt-5 mt-3">
+    <Container className=" pt-3 pt-md-5 mt-1 mt-md-3">
       <Row>
         <Col lg={6} className="mb-3">
           <CustomComponent {...data}>

@@ -23,7 +23,7 @@ export const Features = () => {
               <Col sm={4} lg={3} key={id}>
                 <div className="feature__inner">
                   <h2 className="mb-1">
-                    <CountUp end={timer} />
+                    <CountUp end={timer} enableScrollSpy={true} />
                   </h2>
                   <p> {title} </p>
                 </div>
