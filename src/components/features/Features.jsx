@@ -4,10 +4,10 @@ import CountUp from "react-countup";
 import "./features.scss";
 
 const featuresData = [
-  { id: 1, timer: 575, title: "Download" },
-  { id: 2, timer: 500, title: "Active User" },
-  { id: 3, timer: 600, title: "Positive Feedback" },
-  { id: 4, timer: 550, title: "+ rating" },
+  { id: 1, timer: 570, title: "Download" },
+  { id: 2, timer: 570, title: "Active User" },
+  { id: 3, timer: 570, title: "Positive Feedback" },
+  { id: 4, timer: 570, title: "+ rating" },
 ];
 
 export const Features = () => {

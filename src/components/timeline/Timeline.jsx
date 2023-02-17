@@ -20,7 +20,7 @@ const Timeline = () => {
     <>
       {timelineData.map(({ title, text }, index) => (
         <li className="timeline__item" key={index}>
-          <p data-count="3">{title}</p>
+          <p data-count="1">{title}</p>
           <span>{text}</span>
         </li>
       ))}

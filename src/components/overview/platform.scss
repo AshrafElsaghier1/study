@@ -17,7 +17,28 @@
 
         span {
 
-            color: var(--secondary-color);
+            color: var(--text-color);
+        }
+    }
+
+    @media (min-width: 1400px) {
+        padding: 55px 0;
+
+        .platform__inner-top {
+            p {
+
+                font: normal normal 600 28px/37px Poppins;
+
+            }
+
+            h2 {
+                font: normal normal bold 60px/80px Poppins;
+
+            }
+
+            span {
+                font: normal normal normal 14px/24px Poppins;
+            }
         }
     }
 

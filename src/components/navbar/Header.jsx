@@ -27,13 +27,13 @@ const Header = () => {
       sticky="top"
       expand="lg"
       id="header__navbar"
-      className={` navbar__container w-100 ${active ? "active" : ""}  `}
+      className={` navbar__container w-100  ${active ? "active" : ""}`}
     >
       <Container className="h-100">
         <div className="logo">
           <NavLink to="/study" className="logo__link">
             <h2 className="mb-0">
-              St <span>u</span> dy
+              St<span>v</span> dy
             </h2>
           </NavLink>
         </div>
@@ -59,7 +59,7 @@ const Header = () => {
               <div className="logo">
                 <NavLink to="/study" className="logo__link">
                   <h2 className="mb-0">
-                    St <span>u</span> dy
+                    St<span>v</span> dy
                   </h2>
                 </NavLink>
               </div>
@@ -77,11 +77,8 @@ const Header = () => {
                 </NavLink>
               ))}
             </Nav>
-            <Nav className="link__btn-container ">
-              <Link
-                to="/study"
-                className="d__flex-center link__btn-btn mt-3 mt-lg-0"
-              >
+            <Nav className="link__btn-container mt-2 mt-lg-0">
+              <Link to="/study" className="d__flex-center link__btn-btn  w-100">
                 About us
               </Link>
             </Nav>

@@ -6,6 +6,7 @@ li.timeline__item {
         font-size: 1rem;
         color: var(--secondary-color);
 
+
         &::before {
             content: attr(data-count);
             position: absolute;
@@ -26,30 +27,83 @@ li.timeline__item {
                 width: 27px;
                 height: 27px;
                 left: -16px;
-
             }
         }
+
     }
 
     span {
-        position: relative;
-
         color: var(--text-color);
+    }
 
-        &::before {
-            @extend p;
-            top: 0;
-            transform: translate(-20px, 0%);
-            width: 1px;
-            height: 100%;
-            left: -10px;
-            background-color: #bcbcbc;
+    &:not(:last-child) {
+        span {
+            position: relative;
 
-            @media (max-width:767px) {
-                left: -3px;
+            &::before {
+                @extend p;
+                top: 0;
+                transform: translate(-20px, 0%);
+                width: 1px;
+                height: 100%;
+                left: -10px;
+                background-color: #bcbcbc;
+
+                @media (max-width:767px) {
+                    left: -3px;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 1400px) {
+    li.timeline__item {
+        margin-bottom: 30px;
+
+        p {
+
+            font-size: 24px;
+
+
+            &::before {
+
+                left: -40px;
+                width: 53px;
+                height: 53px;
+                transform: translate(-40px, -50%);
+                font-size: 24px;
 
             }
 
         }
+
+        span {
+            font-size: 14px;
+        }
+
+        &:not(:last-child) {
+            span {
+                position: relative;
+
+                &::before {
+
+
+                    transform: translate(-22px, 0%);
+                    border-radius: 0;
+                    width: 2px;
+                    height: 100%;
+                    left: -33px;
+                    background-color: #bcbcbc;
+                    top: 5px;
+
+                }
+            }
+        }
+
     }
+
+
 }

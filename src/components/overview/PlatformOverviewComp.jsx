@@ -4,7 +4,7 @@ import "./platform.scss";
 
 const PlatformOverviewComp = () => {
   return (
-    <section id="platform">
+    <section id="platform" className="position-relative">
       <Container>
         <div className="platform__inner-top ">
           <Row>

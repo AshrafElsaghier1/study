@@ -1,24 +1,22 @@
-.swiper-pagination {
+.mySwiper {
 
-    span {
 
-        &.swiper-pagination-bullet-active,
-        &:hover {
-            background-color: var(--main-color);
 
-            opacity: 1;
-
-        }
-    }
-
-}
-
-.swiper__container.position-relative {
     .swiper-pagination {
+        bottom: -30px;
 
+        span {
 
-        @media(max-width:767px) {
-            bottom: -10px;
+            &.swiper-pagination-bullet-active,
+            &:hover {
+                background-color: var(--main-color);
+
+                opacity: 1;
+
+            }
         }
+
     }
+
+
 }

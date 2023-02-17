@@ -7,7 +7,6 @@
      .menubar {
          box-shadow: none !important;
          padding: 0;
-
          height: 30px;
          width: 40px;
 
@@ -92,13 +91,21 @@
          }
      }
 
+     @media (max-width: 767px) {
+         height: 50px;
+
+         &.active {
+             height: 50px;
+         }
+     }
  }
 
  #offcanvasNavbar-expand-lg {
      .offcanvas-header {
          padding-top: 0;
          padding-bottom: 0;
-         height: 70px;
+         height: 60px;
+
      }
 
      a {
@@ -107,6 +114,7 @@
          color: #fff;
          width: max-content;
          transition: var(--transition);
+         line-height: 19px;
 
          &:not(.link__btn-btn) {
              position: relative;
@@ -135,11 +143,12 @@
      }
 
      .link__btn-container {
-         width: 178px;
+         width: 150px;
          justify-content: flex-end;
+         height: 40px;
 
          .link__btn-btn {
-             width: 120px;
+             height: auto;
              background: var(--gradient-theme);
              font-size: 14px;
              font-weight: 500;
@@ -148,6 +157,9 @@
              color: #fff !important
          }
 
+         @media screen and (max-width:991px) {
+             width: 120px;
+         }
      }
 
  }
@@ -162,36 +174,41 @@
              font-size: 2.5rem;
              font-weight: 700;
              letter-spacing: 1.2px;
-
+             line-height: .9;
 
              span {
                  position: relative;
                  text-transform: lowercase;
-                 font-size: 35px;
+                 font-size: 32px;
                  line-height: 0.5;
                  display: inline-block;
+                 line-height: .9;
+
 
                  &::before {
                      content: "";
                      position: absolute;
-                     top: -4px;
+                     top: -2px;
                      left: 50%;
                      transform: translateX(-50%);
                      width: 50%;
-                     height: 2px;
+                     height: 3px;
                      background-color: var(--white-color);
                      transition: var(--transition);
                  }
 
                  @media (max-width:767px) {
-                     font-size: 1.4rem;
+                     font-size: 1.2rem;
 
-
+                     &::before {
+                         height: 2px;
+                         top: 0;
+                     }
                  }
              }
 
              @media (max-width:767px) {
-                 font-size: 1.5rem;
+                 font-size: 1.4rem;
 
 
              }
@@ -206,25 +223,13 @@
  .offcanvasNavbar__container {
 
 
-     @media (max-width:992px) {
+     @media (max-width:991px) {
          a {
 
              color: var(--secondary-color) !important;
 
          }
 
-         .link__btn {
-             margin-top: 1rem;
-
-             a {
-
-                 color: #fff !important;
-             }
-
-
-
-
-         }
 
          .offcanvas-header {
              .btn-close {
@@ -242,10 +247,8 @@
                      color: var(--secondary-color) !important;
 
                      h2 {
-                         font-size: 30px;
 
                          span {
-                             font-size: 28px;
 
                              &::before {
 
@@ -259,6 +262,58 @@
                  }
              }
          }
+     }
+
+ }
+
+
+ @media screen and (min-width:1400px) {
+     #header__navbar {
+
+         height: 90px;
+
+         &.active {
+             height: 75px;
+         }
+
+     }
+
+     #offcanvasNavbar-expand-lg {
+         .link__btn-container {
+             width: 178px;
+             justify-content: flex-end;
+             height: 45px;
+
+             .link__btn-btn {
+                 font-size: 1rem;
+
+             }
+
+         }
+
+     }
+
+     .logo {
+         .logo__link {
+             h2 {
+                 letter-spacing: normal;
+                 font-size: 3.25rem;
+
+                 span {
+                     font-size: 3rem;
+                     margin-left: 4px;
+
+                     &::before {
+                         height: 2px;
+                         width: 13px;
+                         top: 3px;
+                     }
+
+                 }
+             }
+
+         }
+
      }
 
  }

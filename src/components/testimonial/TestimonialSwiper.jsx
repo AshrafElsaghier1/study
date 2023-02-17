@@ -46,15 +46,18 @@ const TestimonialSwiper = () => {
         {testimonialData.map(
           ({ id, imgSrc, jobTitle, iconCount, desc, name }) => (
             <SwiperSlide className="swiper__item" key={id}>
-              <Row className="align-items-sm-center p-3">
-                <Col xs={4}>
+              <Row className="align-items-sm-center p-3 row__container">
+                <Col xs={4} className="text-en ">
                   <img src={imgSrc} alt="user-img" className="w-100" />
                 </Col>
                 <Col xs={8}>
                   <div className="testimonial__inner-info">
                     <p className="mb-0 "> {name} </p>
-                    <span className="d-block mb-2"> {jobTitle} </span>
-                    <span className="d-block">{desc}</span>
+                    <span className="d-block mb-2 job__title">
+                      {" "}
+                      {jobTitle}{" "}
+                    </span>
+                    <span className="d-block desc">{desc}</span>
                     <span className="icons__container">
                       {[...Array(iconCount)].map((_, i) => (
                         <AiFillStar key={i} />

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
+
 :root {
     --main-color: #FF6057;
     --secondary-color: #3B3A3A;
@@ -8,6 +9,8 @@
     --white-color: #FFFFFF;
     --transition: .4s ease-in-out;
 }
+
+
 
 * {
     margin: 0;
@@ -97,4 +100,10 @@
 
 
     }
+}
+
+@font-face {
+    font-family: "Nueva-bold";
+
+    src: url("./fonts/NuevaStd-Bold.otf");
 }

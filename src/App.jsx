@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import LayoutComponent from "./components/layout/LayoutComponent";
 import Header from "./components/navbar/Header";
-import "./App.scss";
+import "./App.css";
 
 const App = () => {
   return (

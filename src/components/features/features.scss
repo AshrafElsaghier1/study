@@ -24,4 +24,25 @@
             color: var(--secondary-color);
         }
     }
+
+    @media (min-width: 1400px) {
+        h2 {
+            font: normal normal bold 38px/49px Poppins;
+
+        }
+
+        .feature__inner {
+            text-align: center;
+
+            h2 {
+                font: normal normal bold 46px/72px Poppins;
+
+
+            }
+
+            p {
+                font: normal normal 600 20px/49px Poppins;
+            }
+        }
+    }
 }

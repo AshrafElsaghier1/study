@@ -13,7 +13,7 @@ import "swiper/css/scrollbar";
 import "./clients.scss";
 const Clients = () => {
   return (
-    <Container id="clients" className="pb-3">
+    <Container id="clients" className="pb-3 pt-4 pt-lg-0">
       <Row className="justify-content-center">
         <Col lg={10}>
           <div className="img__container  text-center">

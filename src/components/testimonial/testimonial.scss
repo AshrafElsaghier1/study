@@ -14,36 +14,99 @@
             .swiper__item {
 
 
-                img {
-                    object-fit: cover;
-                    width: 157px;
-                }
+                .row__container {
 
-                .testimonial__inner-info {
-                    p {
 
-                        color: var(--secondary-color);
-                        font-weight: 500;
-
+                    img {
+                        object-fit: cover;
+                        width: 157px;
                     }
 
-                    span {
-                        color: var(--text-color);
+                    .testimonial__inner-info {
+                        p {
 
-                        &.icons__container {
-                            color: #CB48F9;
+                            color: var(--secondary-color);
+                            font-weight: 500;
+
                         }
 
-                        @media (max-width:500px) {
-                            font-size: 12px;
+                        span {
+                            color: var(--text-color);
+
+                            &.icons__container {
+                                color: #CB48F9;
+                            }
+
+                            @media (max-width:500px) {
+                                font-size: 12px;
+                            }
                         }
+                    }
+
+                    @media (min-width:767px) and (max-width:1100px) {
+                        height: 260px;
                     }
                 }
             }
-        }
 
-        .swiper-pagination {
-            bottom: -35px;
+            .swiper-pagination {
+                bottom: -35px;
+            }
+        }
+    }
+
+    @media (min-width: 1400px) {
+        .testimonial__container {
+
+
+            .mySwiper {
+                .swiper__item {
+                    .row__container {
+                        height: 360px;
+                        padding: 0 50px !important;
+
+                        img {
+
+                            width: 157px !important;
+
+                        }
+
+                        .testimonial__inner-info {
+                            p {
+                                font: normal normal 600 24px/30px Poppins;
+
+                            }
+
+                            span {
+                                &.job__title {
+                                    font: normal normal 500 16px/49px Poppins;
+                                    color: #8F8F8F;
+                                }
+
+                                &.desc {
+                                    font: normal normal normal 18px/25px Poppins;
+                                }
+
+                                &.icons__container {
+                                    color: #CB48F9;
+                                    display: inline-block;
+                                    margin-top: 10px;
+
+                                    svg {
+                                        margin-right: 5px;
+                                    }
+                                }
+
+
+                            }
+                        }
+                    }
+                }
+
+                .swiper-pagination {
+                    bottom: -35px;
+                }
+            }
         }
     }
 }
