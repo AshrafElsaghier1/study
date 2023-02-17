@@ -45,6 +45,7 @@
 
      .input__container {
          position: relative;
+         width: 90%;
 
          input {
              border-radius: 25px;
@@ -78,6 +79,11 @@
                  width: 120px;
 
              }
+
+         }
+
+         @media (max-width:991px) {
+             width: 100%;
 
          }
      }
