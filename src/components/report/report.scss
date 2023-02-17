@@ -9,7 +9,35 @@
         }
 
 
-        @media (min-width: 992px) {
+
+
+        @media (min-width: 992px) and (max-width:1169px) {
+            .bg__img-container {
+                position: relative;
+                width: 50vw;
+                left: -11vw;
+                height: 450px;
+
+                .bg__img {
+                    transform-origin: center;
+                    position: relative;
+                    transform: matrix(1, -0.2, 0.2, 1, 0, 0);
+                    margin-top: -14%;
+                    margin-left: -23vw;
+                }
+
+                .report__img {
+                    position: absolute;
+                    top: 50%;
+                    left: -2vw;
+                    transform: translate(-1vw, -50%);
+
+
+                }
+            }
+        }
+
+        @media (min-width: 1170px) {
 
             .bg__img-container {
                 position: relative;
@@ -40,9 +68,6 @@
 
 
             .bg__img-container {
-
-
-
                 .bg__img {
                     margin-top: 0;
                     top: 50%;
@@ -53,44 +78,29 @@
                 .report__img {
                     position: absolute;
                     top: 50%;
-                    left: -4vw;
-                    transform: translate(-4vw, -50%);
-                    left: -3vw;
-                    transform: translate(-3vw, -50%);
-
-
+                    left: -2.5vw;
+                    transform: translate(-2.5vw, -50%);
                 }
             }
         }
 
-        // @media (min-width:1500px) {
+        @media (min-width:1531px) {
+            .bg__img-container {
+                .bg__img {
+                    margin-top: 0;
+                    top: 50%;
+                    transform: translate(-5vw, -44%);
+                    height: 900px;
+                }
+
+                .report__img {
+                    left: -5vw;
+                    transform: translate(-vw, -50%);
+                }
+            }
+        }
 
 
-        //     .bg__img-container {
-
-
-        //         // .bg__img {
-        //         //     transform-origin: center;
-        //         //     position: relative;
-        //         //     transform: matrix(1, -0.2, 0.2, 1, 0, 0);
-        //         //     margin-top: -14%;
-        //         //     margin-left: -23vw;
-        //         //     left: -8vw;
-        //         //     transform: translate(-9vw, -50%);
-        //         // }
-
-        //         .report__img {
-        //             position: absolute;
-        //             top: 50%;
-        //             left: -4vw;
-        //             transform: translate(-4vw, -50%);
-        //             left: -3vw;
-        //             transform: translate(-3vw, -50%);
-
-
-        //         }
-        //     }
-        // }
 
 
 

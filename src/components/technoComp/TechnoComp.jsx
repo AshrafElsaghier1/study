@@ -15,18 +15,18 @@ const TechnoComp = () => {
           </Col>
           <Col lg={6} className="sec__inner-imgs ">
             <div className="bg__img-container mb-4 mb-lg-0">
-              {/* <img
-                src="./assets/imgs/techno-r.png"
+              <img
+                src="./assets/imgs/rectangle.png"
                 alt=""
                 draggable="false"
                 className="w-100 bg__img d-none d-lg-inline"
-              /> */}
-              {/* <img
+              />
+              <img
                 src="./assets/imgs/report-1.png"
                 alt=""
                 draggable="false"
                 className="w-100 techno__img"
-              /> */}
+              />
             </div>
           </Col>
         </Row>
