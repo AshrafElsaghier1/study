@@ -14,7 +14,7 @@ const TechnoComp = () => {
             </CustomComponent>
           </Col>
           <Col lg={6} className="sec__inner-imgs ">
-            <div className="bg__img-container mb-4 mb-lg-0">
+            <div className="bg__img-container  my-4 my-lg-0">
               <img
                 src="./assets/imgs/rectangle.png"
                 alt=""
