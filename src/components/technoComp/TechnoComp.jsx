@@ -22,7 +22,7 @@ const TechnoComp = () => {
                 className="w-100 bg__img d-none d-lg-inline"
               />
               <img
-                src="./assets/imgs/report-1.png"
+                src="./assets/imgs/NoPath.svg"
                 alt=""
                 draggable="false"
                 className="w-100 techno__img"

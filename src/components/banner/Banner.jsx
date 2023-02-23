@@ -1,6 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Clients from "../clients/Clients";
 import "./banner.scss";
 const Banner = () => {
   return (
@@ -26,7 +25,7 @@ const Banner = () => {
           </Col>
           <Col xs={12} lg={6} className="banner__inner-img p-0 mb-3 mb-lg-0">
             <img
-              src="./assets/imgs/report.png"
+              src="./assets/imgs/NoPath.svg"
               alt="report-img"
               draggable="false"
               className="w-100"

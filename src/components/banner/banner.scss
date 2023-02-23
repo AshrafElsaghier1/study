@@ -161,6 +161,8 @@
         }
     }
 
+
+
     @media screen and (min-width:1400px) {
         padding-top: 180px;
         height: 1080px;
@@ -194,8 +196,6 @@
 
                     a {
                         height: 45px;
-
-
                     }
 
                 }
@@ -203,9 +203,24 @@
 
             .banner__inner-img {
                 img {
-                    margin-left: 3vw;
-                    width: 851px;
+                    margin-left: 0vw;
+                    width: 745px !important;
                     height: 537px;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:1700px) {
+
+
+        .banner__inner {
+
+
+            .banner__inner-img {
+                img {
+                    margin-left: -15px;
+                    width: 851px !important;
 
                 }
             }
