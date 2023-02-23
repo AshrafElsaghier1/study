@@ -1,21 +1,27 @@
 #business {
     margin-top: 30px;
 
-    .business__inner-right {
-        padding-left: 20px;
+    .business__inner-col {
+        .business__inner-right {
+            padding-left: 20px;
 
-        @media (min-width:768px) and (max-width:991px) {
-            padding-left: 40px;
+            @media (min-width:768px) and (max-width:991px) {
+                padding-left: 40px;
 
-        }
+            }
 
-        @media (max-width:767px) {
-            padding-left: 30px;
+            @media (max-width:767px) {
+                padding-left: 30px;
 
+            }
+
+            @media screen and (min-width:1400px) {
+                padding-left: 0px;
+            }
         }
 
         @media screen and (min-width:1400px) {
-            padding-left: 60px;
+            padding-left: 135px !important;
         }
     }
 }

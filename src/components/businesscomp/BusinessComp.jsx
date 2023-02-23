@@ -22,7 +22,7 @@ const BusinessComp = () => {
               </CustomComponent>
             </div>
           </Col>
-          <Col lg={6}>
+          <Col lg={6} className="business__inner-col">
             <ul className="business__inner-right">
               <Timeline />
             </ul>

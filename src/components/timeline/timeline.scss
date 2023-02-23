@@ -1,5 +1,5 @@
 li.timeline__item {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 
     p {
         position: relative;
@@ -61,27 +61,29 @@ li.timeline__item {
 
 @media screen and (min-width: 1400px) {
     li.timeline__item {
-        margin-bottom: 30px;
+        margin-bottom: 0px;
 
         p {
 
             font-size: 24px;
-
+            margin-bottom: 33px !important;
 
             &::before {
-
-                left: -40px;
+                left: -59.5px;
                 width: 53px;
                 height: 53px;
-                transform: translate(-40px, -50%);
                 font-size: 24px;
-
             }
 
         }
 
         span {
             font-size: 14px;
+            margin-bottom: 35px;
+            display: inline-block;
+            padding-bottom: 10px;
+
+            padding-right: 35px;
         }
 
         &:not(:last-child) {
@@ -89,15 +91,13 @@ li.timeline__item {
                 position: relative;
 
                 &::before {
-
-
-                    transform: translate(-22px, 0%);
                     border-radius: 0;
                     width: 2px;
                     height: 100%;
-                    left: -33px;
+                    left: -35px;
+
                     background-color: #bcbcbc;
-                    top: 5px;
+                    top: 0px;
 
                 }
             }

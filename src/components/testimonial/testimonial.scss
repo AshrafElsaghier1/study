@@ -56,6 +56,15 @@
     }
 
     @media (min-width: 1400px) {
+        .testimonial__col {
+            padding-left: 75px;
+
+            span {
+
+                width: calc(100% - 15px)
+            }
+        }
+
         .testimonial__container {
 
 

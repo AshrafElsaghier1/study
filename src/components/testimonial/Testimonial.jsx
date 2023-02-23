@@ -17,7 +17,7 @@ const Testimonial = () => {
           <Col lg={6}>
             <TestimonialSwiper />
           </Col>
-          <Col lg={6} className="mt-4 mt-lg-0">
+          <Col lg={6} className="mt-4 mt-lg-0 testimonial__col">
             <CustomComponent {...data} button={true}>
               Grow Your Business and
               <br /> Join Our Happy Users

@@ -109,7 +109,8 @@
          }
 
          li {
-             font: normal normal normal 14px/25px Poppins;
+             font-size: 14px;
+             line-height: 25px;
              margin-bottom: 0;
          }
 
@@ -117,8 +118,13 @@
              width: 83%;
 
              input {
-                 font: normal normal 600 16px/28px Poppins;
+
+                 font-size: 16px;
+                 line-height: 28px;
+                 font-weight: 500;
                  height: 50px;
+
+
 
              }
 
